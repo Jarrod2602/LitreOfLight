@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Litre of Light Control";
+}
+
+<h2>Litre of Light Control</h2>
+
+<form action="@Url.Action("TurnOn", "LitreOfLight")" method="post">
+    <button type="submit">Turn LED Off</button>
+</form>
+
+<form action="@Url.Action("TurnOff", "LitreOfLight")" method="post">
+    <button type="submit">Turn LED On</button>
+</form>
