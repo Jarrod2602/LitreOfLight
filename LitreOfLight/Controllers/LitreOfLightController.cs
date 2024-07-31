@@ -23,6 +23,7 @@ namespace LitreOfLight.Controllers
             return View();
         }
 
+        //Post: turn LED on
         [HttpPost]
         public async Task<ActionResult> TurnOn()
         {
@@ -52,7 +53,6 @@ namespace LitreOfLight.Controllers
             }
             catch (Exception ex)
             {
-                // Optionally handle exception
                 Console.WriteLine(ex.Message);
             }
         }
